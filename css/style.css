@@ -1,0 +1,675 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 15;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #ADADAD; */
+}
+
+#title {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    height: 100%;
+}
+
+#title-first {
+    color: orangered;
+}
+
+#title-second {
+    color: orangered;
+}
+
+.second,
+.third,
+.last {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.second ul,
+.third ul,
+.last ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+}
+
+.second ul li a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 20px;
+    transition: all .3s linear;
+}
+
+.second ul li {
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 20px;
+    transition: all .3s linear;
+}
+
+.third ul li {
+    cursor: pointer;
+    vertical-align: baseline;
+    transition: all .3s linear;
+    margin: 0px 10px;
+}
+
+.third ul li a {
+    color: black;
+    cursor: pointer;
+    vertical-align: baseline;
+    transition: all .3s linear;
+    margin: 0px 10px;
+}
+
+.second ul li a:hover,
+.third ul li a:hover {
+    color: #FF8989;
+}
+
+.last ul li {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 10px;
+}
+
+.last ul li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+
+    border-radius: 20px;
+    padding: 5px 15px;
+    background: none;
+    border: 2px solid black;
+}
+
+.last ul li button a svg {
+    margin: 0px 2px;
+}
+
+
+#log {
+    border: none;
+    background-color: #FF8989;
+    color: white;
+}
+.last ul li button a {
+    text-decoration: none;
+    color: black;
+ }
+.con {
+    margin-top: 70px;
+    /* background-color: #F1F6F9; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.firstdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border: 2px solid rebeccapurple; */
+    width: 70%;
+}
+
+.firstdiv div {
+    width: 40%;
+}
+
+.firstdiv div h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+
+}
+
+.firstdiv div p {
+    text-align: left;
+    font-weight: 300;
+}
+
+.firstdiv div #line {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.firstdiv div button {
+
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    transition: all .3s;
+}
+
+.firstdiv div button:hover {
+    border-color: #FF8989;
+    background-color: #FF8989;
+    border-top-right-radius: 0px;
+}
+
+.seconddiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border: 2px solid rebeccapurple; */
+    width: 30%;
+}
+
+.imglanding {
+    position: relative;
+    left: -200px;
+    /* transform: translateX(-200px); */
+    z-index: 10;
+    height: 70%;
+    animation: move infinite linear 1.5s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+#shop {
+    /* background-color: #F1F6F9; */
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.shopbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0px;
+
+}
+
+.shopitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 250px;
+    background-color: #F1F6F9;
+    height: 260px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.145);
+}
+
+.shopitem:hover {
+    /* background-color: #F1C93B; */
+    background-color: #FF8989;
+    color: white;
+}
+
+.shopitem:hover .price button {
+    color: #FF8989;
+    background-color: #ffffff;
+}
+
+.shopitem:hover .price button a {
+    color: #FF8989;
+}
+
+.shopimg {
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    width: 100%;
+    height: 60%;
+}
+
+.shopitem div {
+    cursor: pointer;
+    width: 80%;
+}
+
+.shopitem div h3 {
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.price {
+    margin: 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price span {
+    cursor: pointer;
+    font-size: large;
+    font-weight: 600;
+}
+
+.price button {
+
+    border: none;
+    /* background-color: #F1C93B; */
+    background-color: #FF8989;
+    padding: 5px 25px;
+    text-align: center;
+    transition: all linear .5s;
+    transform-origin: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.price button a {
+    text-decoration: none;
+    color: white;
+}
+
+.price button:hover {
+    padding: 5px 25px;
+    border-top-right-radius: 0px;
+}
+
+.price button:hover a {
+    color: #FF8989;
+}
+
+
+#aboutUs {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.abouttext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+
+.abouttext h3 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.abouttext p {
+    text-align: center;
+    width: 70%;
+}
+
+.aboutimgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 45%;
+    height: 80%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
+    width: 80%;
+    height: 80%;
+}
+
+.img1 {
+    cursor: pointer;
+
+    background-image: url("../images/img1.jpg");
+    border-radius: 20% 0% 0% 0%;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2 {
+    cursor: pointer;
+    transition: all 1s linear;
+    background-image: url("../images/img2.jpg");
+    border-radius: 0% 20% 0% 0%;
+    background-size: cover;
+    background-position: center;
+}
+
+.img3 {
+    cursor: pointer;
+    transition: all 1s linear;
+    background-image: url("../images/img3.jpg");
+    border-radius: 0% 0% 0% 20%;
+    background-size: cover;
+    background-position: center;
+}
+
+.img4 {
+    cursor: pointer;
+    transition: all 1s linear;
+    background-image: url("../images/img4.jpg");
+    border-radius: 0% 0% 20% 0%;
+    background-size: cover;
+    background-position: center;
+}
+
+#recipesH {
+    width: 100%;
+    height: 100px;
+}
+
+#recipes {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.recipesbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.recipesitem {
+    border-radius: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-radius: 20px;
+    width: 250px;
+    background-color: #F1F6F9;
+    height: 290px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.145);
+}
+
+.recipesimg {
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/img1.jpg');
+}
+
+.recipesitem p {
+    padding-top: 10px;
+    font-size: small;
+    width: 90%;
+    height: 30%;
+    text-align: left;
+    color: black;
+}
+
+.recipesitem button {
+    font-size: small;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background-color: #FF8989;
+    padding: 5px 15px;
+}
+
+.recipesitem button a {
+    color: white;
+    text-decoration: none;
+}
+
+.recipespage {
+    width: 100vw;
+    height: 100vh;
+
+    /* margin-top:70px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+}
+
+.resImg img {
+    border-radius: 20px;
+    height: 60%
+}
+
+.resImg h3 {
+    padding-top: 10px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.restext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rebeccapurple; */
+    width: 50vw;
+    height: 100%;
+}
+
+.window {
+    overflow: hidden;
+    overflow-y: auto;
+    width: 80%;
+    height: 50%;
+}
+
+.window ul {
+    list-style: circle;
+    width: 90%;
+    height: 100%;
+    margin: 0px;
+}
+
+.window ul li {
+
+    padding: 15px 0px;
+}
+
+.window::-webkit-scrollbar {
+    width: 5px;
+}
+
+.window::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.window::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: #555;
+}
+
+.window::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.Buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100Vw;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+.BuyBox {
+    background-color:#9BABB8;
+    /* color: white; */
+    border-radius: 20px;
+    width: 30%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.BuyBox h3 {
+    margin: 0px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.cardType,
+.cardName,
+.cardNumber {
+    margin: 0px;
+    width: 80%;
+}
+
+p {
+    margin: 5px 0px;
+    font-weight: 400;
+}
+
+#cardType {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#cardName,
+#cardNumber {
+    padding: 2px 5px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.CVVEx {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CVV,
+.EX {
+    width: 40%;
+
+}
+
+#CVV,
+#Expriry {
+
+    padding: 2px 5px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100%;
+}
+
+#pay {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    background: white;
+    color: #FF8989;
+    border-radius: 25px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.Login{
+    background-color:#9BABB8;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+}
+
+.Contact{
+    background-color: #001C30;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContactBox{
+    width: 70%;
+
+}
