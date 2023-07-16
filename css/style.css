@@ -24,6 +24,10 @@ nav {
     /* background-color: #ADADAD; */
 }
 
+#opennav {
+    display: none;
+}
+
 #title {
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -125,10 +129,12 @@ nav {
     background-color: #FF8989;
     color: white;
 }
+
 .last ul li button a {
     text-decoration: none;
     color: black;
- }
+}
+
 .con {
     margin-top: 70px;
     /* background-color: #F1F6F9; */
@@ -570,7 +576,7 @@ nav {
 }
 
 .BuyBox {
-    background-color:#9BABB8;
+    background-color: #9BABB8;
     /* color: white; */
     border-radius: 20px;
     width: 30%;
@@ -649,8 +655,9 @@ p {
     border: none;
     outline: none;
 }
-.Login{
-    background-color:#9BABB8;
+
+.Login {
+    background-color: #9BABB8;
     border-radius: 20px;
     text-align: center;
     display: flex;
@@ -661,7 +668,7 @@ p {
     height: 50%;
 }
 
-.Contact{
+.Contact {
     background-color: #001C30;
     width: 100vw;
     height: 70vh;
@@ -669,7 +676,343 @@ p {
     justify-content: center;
     align-items: center;
 }
-.ContactBox{
+
+.ContactBox {
     width: 70%;
 
+}
+
+.NabBox {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    body {
+        background-color: #FF8989;
+    }
+
+    .second {
+        display: none;
+    }
+
+    .third {
+        display: none;
+    }
+
+    .last {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .first {
+
+        margin-left: 50px;
+    }
+
+    #title {
+        font-size: 1.2rem;
+    }
+
+    .navbar.navbar-1 .navbar-toggler-icon {
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+    }
+
+    #opennav {
+        padding: 5px;
+        cursor: pointer;
+        background: transparent;
+        margin-right: 50px;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .con {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .firstdiv {
+        height: 50%;
+    }
+
+    .firstdiv div {
+        font-size: .8rem;
+        width: 100%;
+    }
+
+    .firstdiv div h2 {
+        font-size: 1.7rem;
+    }
+
+    .firstdiv div p {
+        font-size: 1rem;
+    }
+
+    #line {
+        font-size: .8rem;
+    }
+
+    .seconddiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 100%;
+    }
+
+    .imglanding {
+        /* position: relative; */
+        /* left: -200px; */
+        transform: translateX(200px);
+        z-index: 10;
+        height: 100%;
+        animation: none;
+        /* height: 70%; */
+        /* animation: move infinite linear 1.5s; */
+    }
+
+    .shopbox {
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .shopitem {
+        margin: 10px 0px;
+    }
+
+    #aboutUs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abouttext {
+        margin: 10px 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    .abouttext p {
+        width: 90%;
+        font-size: .9rem;
+    }
+
+    .aboutimgs {
+        width: 100%;
+    }
+
+    #grid {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutimgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+        width: 80%;
+        height: 80%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-gap: 5px;
+        width: 80%;
+        height: 80%;
+        border-radius: 0px;
+    }
+
+    .img1 {
+        cursor: pointer;
+
+        background-image: url("../images/img1.jpg");
+        border-radius: 0% 0% 0% 0%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img2 {
+        cursor: pointer;
+        transition: all 1s linear;
+        background-image: url("../images/img2.jpg");
+        border-radius: 0% 0% 0% 0%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img3 {
+        cursor: pointer;
+        transition: all 1s linear;
+        background-image: url("../images/img3.jpg");
+        border-radius: 0% 0% 0% 0%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img4 {
+        cursor: pointer;
+        transition: all 1s linear;
+        background-image: url("../images/img4.jpg");
+        border-radius: 0% 0% 0% 0%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .recipesbox {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .recipesitem {
+        margin: 10px 0px;
+    }
+
+    #recipes {
+        height: auto;
+    }
+
+    .NabBox {
+        border-top: 1px solid black;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(206, 206, 206);
+        z-index: 11;
+        position: fixed;
+        top: 70px;
+        transition: all linear 2s;
+    }
+
+    .up {
+        transform: translateY(-100vh);
+    }
+
+    .second1,
+    .third1,
+    .last1 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .second1 ul,
+    .third1 ul,
+    .last1 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .second1 ul li a,
+    .third1 ul li a,
+    .last1 ul li a {
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 0px 20px;
+        transition: all .3s linear;
+    }
+
+    .second1 ul li,
+    .last1 ul li {
+
+        cursor: pointer;
+        text-decoration: none;
+        margin: 10px 0px;
+        transition: all .3s linear;
+    }
+
+    .third1 ul li {
+        cursor: pointer;
+        vertical-align: baseline;
+        transition: all .3s linear;
+        margin: 0px 10px;
+    }
+
+    .third1 ul li a {
+        color: black;
+        cursor: pointer;
+        vertical-align: baseline;
+        transition: all .3s linear;
+        margin: 0px 10px;
+    }
+
+    .second1 ul li a:hover,
+    .third1 ul li a:hover {
+        color: #FF8989;
+    }
+
+    .Login {
+        width: 90%;
+    }
+
+    .Buy {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .BuyBox {
+        width: 90%;
+    }
+
+    .recipespage {
+        position: relative;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        /* align-items: center; */
+        width: 100%;
+        height: auto;
+    }
+
+    .resImg {
+        width: 300px;
+        height: 400px;
+        /* height:50%; */
+    }
+
+    .restext {
+        margin-bottom: 100px;
+        height: auto;
+        overflow: visible;
+        width: 100%;
+        /* height: 50%; */
+    }
+
+    .window {
+        height: auto;
+        /* height: 100%; */
+    }
+
+    .window ul {
+        overflow: auto;
+        /* height: 100%; */
+    }
 }

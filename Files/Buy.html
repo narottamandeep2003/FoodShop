@@ -16,12 +16,20 @@
         <div class="first">
             <h1 id="title">f<span id="title-first">o</span>o<span id="title-second">d</span></h1>
         </div>
+        <Button id="opennav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Red" class="bi bi-menu-down"
+                viewBox="0 0 16 16">
+                <path
+                    d="M7.646.146a.5.5 0 0 1 .708 0L10.207 2H14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3.793L7.646.146zM1 7v3h14V7H1zm14-1V4a1 1 0 0 0-1-1h-3.793a1 1 0 0 1-.707-.293L8 1.207l-1.5 1.5A1 1 0 0 1 5.793 3H2a1 1 0 0 0-1 1v2h14zm0 5H1v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zM2 4.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </Button>
+
         <div class="second">
             <ul>
-                <li><a href="./Home.html"><b>Home</b></a></li>
-                <li><a href="./Home.html#AboutusH">About us</a></li>
-                <li><a href="./Home.html#ContactH">Contact us</a></li>
-                <li><a href="./Home.html#recipesH">recipes</a></li>
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="#AboutusH">About us</a></li>
+                <li><a href="#ContactH">Contact us</a></li>
+                <li><a href="#recipesH">recipes</a></li>
             </ul>
         </div>
         <div class="third">
@@ -36,7 +44,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./Home.html#ShopH">
+                    <a href="#ShopH">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-basket2" viewBox="0 0 16 16">
                             <path
@@ -73,6 +81,33 @@
             </ul>
         </div>
     </nav>
+    <div class="NabBox up" id="NabBox">
+        <div class="second1">
+            <ul>
+                <li><a href="./Home.html"><b>Home</b></a></li>
+                <li><a href="./Home.html#AboutusH">About us</a></li>
+                <li><a href="./Home.html#ContactH">Contact us</a></li>
+                <li><a href="./Home.html#recipesH">recipes</a></li>
+                <li>
+                    <a href="./Home.html#ShopH">
+                        shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Sign.html">
+                        sing in
+                    </a>
+                </li>
+                <li>
+
+                    <a href="./Login.html">
+                        login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <form action="./Home.html" class="Buy">
         <div class="BuyBox">
             <h3>Payment</h3>
@@ -105,5 +140,14 @@
         </div>
     </form>
 </body>
-
+<script>
+    document.getElementById("opennav").addEventListener('click', () => {
+        if (document.getElementById("NabBox").classList.contains('up')) {
+            document.getElementById("NabBox").classList.remove('up')
+        }
+        else {
+            document.getElementById("NabBox").classList.add('up')
+        }
+    })
+</script>
 </html>
