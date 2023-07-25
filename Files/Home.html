@@ -12,7 +12,21 @@
 
 <body>
     <!-- nav -->
-
+    <div class="searchclose" id="search">
+        <div class="searchBox">
+            <input type="text" name="search" id="search" placeholder="Search">
+            <button ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></button>
+            <span id="change">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                  </svg>
+            </span>
+        </div>
+    </div>
     <nav>
         <div class="first">
             <h1 id="title">f<span id="title-first">o</span>o<span id="title-second">d</span></h1>
@@ -36,7 +50,7 @@
         <div class="third">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="#" id="open">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-search" viewBox="0 0 16 16">
                             <path
@@ -85,7 +99,7 @@
     <div class="NabBox up" id="NabBox">
         <div class="second1">
             <ul>
-                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="/"><b>Home</b></a></li>
                 <li><a href="#AboutusH">About us</a></li>
                 <li><a href="#ContactH">Contact us</a></li>
                 <li><a href="#recipesH">recipes</a></li>
@@ -115,8 +129,7 @@
                 <h2>
                     <b>Order your</b><br> favourite foods
                 </h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum amet libero at provident molestiae
-                    ad assumenda <b>ullam saepe sed totam.</b></p>
+                <p>Get your favorite food delivered right to your doorstep! With our easy-to-use website, you can order from your favorite restaurants and have your meal <b>delivered in no time.</b></p>
                 <p id="line">Total order : <b>$24.30</b></p>
             </div>
             <div>
@@ -371,14 +384,7 @@
     <div id="aboutUs">
         <div class="abouttext">
             <h3 id="Aboutus">About us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, doloribus ea ullam ipsum sequi tempore
-                iusto voluptatum incidunt molestias nam voluptatem quo optio esse. Nihil et consequatur eveniet totam
-                porro facilis reprehenderit cupiditate, reiciendis nostrum, quo est, earum iusto! Nobis est nulla nemo
-                recusandae ipsam ducimus suscipit voluptatibus, explicabo laudantium dolore, exercitationem ad et ab
-                amet unde consequuntur illum soluta molestiae id? Vitae sit, libero nobis natus cumque illo veritatis
-                enim dolore deserunt quos fugit nisi dicta laboriosam fuga ab quis quidem facere ipsa culpa ea vel
-                alias? Corrupti commodi quis deleniti excepturi. At dignissimos reprehenderit eligendi, aut numquam
-                suscipit?</p>
+            <p>Get your favorite food delivered right to your doorstep! With our easy-to-use website, you can order from your favorite restaurants and have your meal delivered in no time. We offer a wide variety of cuisines to choose from, so you are sure to find something you love. Whether you are craving pizza, sushi, or something else entirely, we have got you covered. Order now and enjoy a delicious meal without ever leaving your home!</p>
         </div>
         <div class="aboutimgs">
             <div class="grid " id="grid">
@@ -434,6 +440,71 @@
             </div>
         </div>
     </div>
+    <div class="chef">
+        <div class="chefbox">
+            <div class="chefitem">
+                <img src="./images/c3.jpg" alt="" class="chefImg">
+                <div>
+                    <span class="ctext">Ram</span>
+                    <span class="iconHeart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </span>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis?</p>
+            </div>
+            <div class="chefitem">
+                <img src="./images/c2.jpg" alt="" class="chefImg">
+                <div>
+                    <span class="ctext">Ram</span>
+                    <span class="iconHeart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </span>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis?</p>
+            </div>
+
+        </div>
+        <div class="chefbox">
+            <div class="chefitem">
+                <img src="./images/c1.jpg" alt="" class="chefImg">
+                <div>
+                    <span class="ctext">Ram</span>
+                    <span class="iconHeart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </span>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis?</p>
+            </div>
+            <div class="chefitem">
+                <img src="./images/c4.jpg" alt="" class="chefImg">
+                <div>
+                    <span class="ctext">Ram</span>
+                    <span class="iconHeart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </span>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis?</p>
+            </div>
+
+        </div>
+
+    </div>
     <div id="ContactH"></div>
     <div class="Contact">
 
@@ -464,6 +535,20 @@
         else {
             document.getElementById("NabBox").classList.add('up')
         }
+    })
+    document.getElementById("change").addEventListener('click', () => {
+        if (document.getElementById("search").classList.contains('search')) {
+            document.getElementById("search").classList.remove('search')
+            document.getElementById("search").classList.add('searchclose')
+        }
+        else {
+            document.getElementById("search").classList.remove('searchclose')
+            document.getElementById("search").classList.add('search')
+        }
+    })
+    document.getElementById("open").addEventListener("click",()=>{
+        document.getElementById("search").classList.remove('searchclose')
+            document.getElementById("search").classList.add('search')
     })
 </script>
 
